@@ -1,12 +1,14 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const mongoose = require('mongoose');
+
 const { chats } = require('./data/data');
 
 const app = express()
 dotenv.config();
 
 app.get('/',(req,res)=>{
-    res.send("Yo API running");
+    res.send("yo API running");
 });
 
 app.get('/api/chat',(req,res)=>{
