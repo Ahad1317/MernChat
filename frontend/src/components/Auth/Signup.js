@@ -99,7 +99,7 @@ const Signup = () => {
       data.append("file", pics);
       data.append("upload_preset", "MernChat");
       data.append("cloud_name", "dvs7xrk0n");
-      fetch("https://api.cloudinary.com/v1_1/dvs7xrk0n", {
+      fetch("https://api.cloudinary.com/v1_1/dvs7xrk0n/image/upload", {
         method: "post",
         body: data,
       })
